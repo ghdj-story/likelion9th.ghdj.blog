@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+            <script
+            src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+            crossorigin="anonymous"></script>
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <title>Who am I?</title>
+        <style>
+            html,body{
+                height:100%;
+            }
+            body{
+                background-color:#9aafa8;
+                display:flex;
+                flex-direction:column;
+            }
+            #header{
+                background-color: #dae4e3;
+                font-size: 16px;
+                height: 180px;
+                border-radius: 10px;
+                margin:20px;
+                padding:20px;
+            }
+           
+            #page{
+                background-color: #ecd1ce;
+                margin:auto;
+                height: 550px;
+                border-radius:20px;
+                padding: 20px;
+                display:flex;
+                
+            }
+            #post{
+                flex:40%;
+                display:flex;
+                flex-direction:column;
+                height: 550px;
+                padding: 20px;
+                text-align: center;
+                
+            }
+            #h2{
+                text-align: center;
+                flex:40%;
+                padding: 20px;
+
+            }
+            #p{
+                text-align: center;
+                flex: 60%;
+                padding: 20px;
+            }
+            #footer{
+                background-color: #dae4e3;
+                font-size: 11px;
+                height: 180px;
+                border-radius: 15px;
+                margin:20px;
+                padding:30px;
+                text-align: center;
+                flex-shrink: 0;
+            }
+            
+            
+           
+            
+        </style>
+        
+    </head>
+    <body>
+        <div class="container">
+        <header id="header">
+            <br>
+            <!--블로그 제목-->
+            <h1> "😃<strong>홍준하</strong>"를 소개합니다</h1>
+            <!--V2: 윈도우의 이모지 기능이 가능하길래 추가해 보았습니다. -->
+            <br>
+            <!--메뉴 부분!!-->
+            <nav id="nav">
+                <ul class="nav nav-tabs">
+                    <li role="presentation"><a href="index.html"> main</a></li>
+                    <li role="presentation" class="active"><a href="photo.html"> photo</a></li>
+                    <li role="presentation"><a href="next.html"> music</a></li>
+                    <li role="presentation"><a href="https://github.com/ghdj-story"> my github</a></li>
+                    <!--V2: github 연결 메뉴바 추가-->
+                </ul>
+            </nav>
+        </header>
+        
+        <br>
+      
+        <div id="page">
+            <!--소장 중인 사진들! 직접 편집했어요-->
+            <div class="row" id="photo">
+                <div class="col-xs-7 col-md-4">
+                <div class="thumbnail">
+                    <image src="KakaoTalk_20210411_204033514.jpg" height="450px" weight="300px"></image>
+                </div>
+                </div>
+                <div class="col-xs-7 col-md-4">
+                    <div class="thumbnail">
+                    <image src="KakaoTalk_20210411_204033514_01.jpg" height="450px" weight="300px"></image>
+                    </div>
+                </div>
+                <div class="col-xs-7 col-md-4">
+                    <div class="thumbnail">
+                    <image src="KakaoTalk_20210411_204033514_02.jpg" height="450px" weight="300px"></image>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div>
+            <footer id="footer">
+            <p style="color:darkslategray">made by <strong>홍준하</strong></p>
+            </footer>
+            <!--V2:footer 추가>
+            <!-V2:footer좌우 크기를 위의 박스들과 같은 크기로 맞추고 싶은데 방법을 몰라서 일단은 여기까지 했습니다 ㅠㅠ-->
+        
+        </div>
+    
+        
+    </body>
+
+</html>
